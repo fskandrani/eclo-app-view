@@ -1,0 +1,48 @@
+<div class="masthead clearfix row">
+	<h1 align="center">
+		Eclo Application View
+	</h1>
+	<div class="span4 text-center" >
+		<h2>
+			System
+		</h2>
+		<div class="text-container">
+			<div class="row-fluid parameter-row"><strong>Name:</strong> {{systems.items[0].name}}</div>
+			<div class="row-fluid parameter-row"><strong>Uid:</strong> {{systems.items[0].uid}}</div>
+		</div>
+	</div>
+	
+	<div class="span4 offset4 text-center" >
+		<h2>
+				Application
+		</h2>
+		<div class="text-container">
+			<div class="row-fluid parameter-row"><strong>Name:</strong> {{systems.items[0].applications[0].name}}</div>
+			<div class="row-fluid parameter-row"><strong>Revision:</strong> {{systems.items[0].applications[0].revision}}</div> 
+		</div>
+	</div>
+</div>
+<div class="row clearfix data-container text-center" >
+	<div class="span3" ng-repeat="d in data[0].data[0].data">
+	
+	
+		<div class="inline-block">
+			<div ng-switch="d.id">
+				<i ng-switch-when="greenhouse.data.temperature" class="wf-icon-temperature"></i>
+				<i ng-switch-when="greenhouse.data.luminosity" class="wf-icon-luminosity"></i>
+				<i ng-switch-when="greenhouse.data.humidity" class="wf-icon-humidity"></i>
+				<i ng-switch-when="greenhouse.data.servo" class="wf-icon-servo"></i>
+			</div>
+			N/A
+		</div>
+		<div class="inline-block">
+		
+			{{d.label}} 
+		</div>
+	
+	</div>
+
+</div>
+
+
+
