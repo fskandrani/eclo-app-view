@@ -1,0 +1,110 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px;
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.masthead {
+	background-color : #333/*#73ca67 /* 	95d88c */;
+}
+
+.masthead h1 {
+	font-size: 60px;
+	line-height: 1;
+	letter-spacing: -2px;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.masthead h2 {
+	color: white;
+}
+
+.text-container {
+	color: white;
+	margin-bottom: 30px;
+}
+
+.data-container {
+	background-color: white;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+@font-face {
+    font-family: 'wf-h';
+    src: url('webfonts/wf-h.eot');
+    src: url('webfonts/wf-h.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/wf-h.woff') format('woff'),
+         url('webfonts/wf-h.ttf') format('truetype'),
+         url('webfonts/wf-h.svg#s-rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ [class^="wf-icon-"]:before, [class*="wf-icon-"]:before {
+  font-family: "wf-h";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  margin-bottom: 10px;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.wf-icon-temperature:before {
+	content: '\e805';
+}
+
+.wf-icon-luminosity:before {
+	content: '\e801';
+}
+
+.wf-icon-humidity:before {
+	content: '\e804';
+}
+
+.wf-icon-servo:before {
+	content: '\e807';
+}
