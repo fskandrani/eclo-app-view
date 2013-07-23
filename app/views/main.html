@@ -23,7 +23,7 @@
 	</div>
 </div>
 <div class="row clearfix data-container text-center" >
-	<div class="span3" ng-repeat="d in data[0].data[0].data">
+	<div class="span3 data-display" ng-repeat="d in data[0].data[0].data">
 	
 	
 		<div class="inline-block">
@@ -33,7 +33,7 @@
 				<i ng-switch-when="greenhouse.data.humidity" class="wf-icon-humidity"></i>
 				<i ng-switch-when="greenhouse.data.servo" class="wf-icon-servo"></i>
 			</div>
-			N/A
+			<h2>{{allData[d.id][0].value && allData[d.id][0].value || 'N/A'}}</h2>
 		</div>
 		<div class="inline-block">
 		
