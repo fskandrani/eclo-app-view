@@ -13,31 +13,31 @@
 				</div>
 				<div class="control-group">
 					<!-- Username -->
-					<label class="control-label" for="username">{{data[0].data[0].data[4].label}}</label>
+					<label class="control-label">{{data[0].data[0].data[4].label}}</label>
 					<div class="controls">
-						<input type="text" ng-model="openingThreshold" class="input-large">
+						<input type="text" ng-model="openingThreshold" ng-change="isDisabled=false" class="input-large">
 					</div>
 				</div>
 				<div class="control-group">
 					<!-- Username -->
-					<label class="control-label" for="username">{{data[0].data[0].data[5].label}}</label>
+					<label class="control-label">{{data[0].data[0].data[5].label}}</label>
 					<div class="controls">
-						<input type="text" ng-model="closingThreshold" class="input-large">
+						<input type="text" ng-model="closingThreshold" ng-change="isDisabled=false" class="input-large">
 					</div>
 				</div>
 				<div class="control-group">
 					<!-- Username -->
-					<label class="control-label" for="username">{{data[0].data[0].data[6].label}}</label>
+					<label class="control-label">{{data[0].data[0].data[6].label}}</label>
 					<div class="controls">
-						<input type="text" id="username" name="username"
-							ng-model="sendDataPeriod" class="input-large">
+						<input type="text"
+							ng-model="sendDataPeriod" ng-change="isDisabled=false" class="input-large">
 					</div>
 				</div>
 
 				<div class="control-group">
 					<!-- Button -->
 					<div class="controls">
-						<button ng-click="save()" class="btn btn-success">Save</button>
+						<button ng-click="save()" class="btn btn-success" ng-disabled="isDisabled">Save</button>
 					</div>
 				</div>
 			</fieldset>

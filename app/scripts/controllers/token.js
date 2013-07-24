@@ -1,7 +1,13 @@
 'use strict';
 
-appmodule.controller('TokenCtrl', function($scope, $location) {
-    $scope.pageTitle = "token recovery";
-    $location.path('/');
-    $cookies.avop_access_token = $routeParams.access_token;
-});
+appmodule.controller('TokenCtrl',
+        function($http, $location, $scope, $routeParams, $cookies, config, ApplicationService) {
+            $scope.pageTitle = "token recovery";
+            $cookies.avop_access_token = $routeParams.access_token;
+            ApplicationService.getSystems(function(result) {
+                config.systemUid = result[0].uid;
+                config.applicationUid = result[0].applications[0].uid;
+                config.applicationName = result[0].applications[0].name;
+                $location.path('/home');
+            });
+        });

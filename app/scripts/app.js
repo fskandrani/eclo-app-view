@@ -3,12 +3,12 @@
 var appmodule = angular.module('ecloApp', [
         'ngCookies',
         'ngResource' ]).config(function($routeProvider) {
-    $routeProvider.when('/', {
-        templateUrl : 'views/main.html',
-        controller : 'MainCtrl'
-    }).when('/login', {
+    $routeProvider.when('/login', {
         templateUrl : 'views/default.html',
         controller : 'LoginCtrl'
+    }).when('/home', {
+        templateUrl : 'views/main.html',
+        controller : 'MainCtrl'
     }).when('/configuration', {
         templateUrl : 'views/configuration.html',
         controller : 'ConfigurationCtrl'

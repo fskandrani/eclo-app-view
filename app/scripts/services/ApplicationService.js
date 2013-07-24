@@ -21,6 +21,7 @@ appmodule.factory('ApplicationService', function ApplicationService($resource, $
     };
 
     services.getAllDataValues = function(applicationUid, successHandler, errorHandler) {
+        console.log("cookies : ", $cookies.avop_access_token);
         $http.get(
                 config.serverURL + '/api/v1/systems/' + applicationUid + '/data?all=true&company=' + config.companyUid
                         + '&' + 'access_token=' + $cookies.avop_access_token).success(function(data) {
@@ -37,6 +38,7 @@ appmodule.factory('ApplicationService', function ApplicationService($resource, $
         });
     };
 
+    // This service is not used
     services.getApplicationDetails = function(applicationUid, successHandler, errorHandler) {
         $http.get(
                 config.serverURL + '/api/v1/applications?uid=' + applicationUid + '&access_token='
@@ -45,5 +47,12 @@ appmodule.factory('ApplicationService', function ApplicationService($resource, $
         }).error(errorHandler);
     };
 
+    services.getSystems = function(successHandler, errorHandler) {
+        $http.get(
+                config.serverURL + '/api/v1/systems/?fields=uid,name,applications&access_token='
+                        + $cookies.avop_access_token).success(function(data) {
+            return successHandler(data.items);
+        }).error(errorHandler);
+    };
     return services;
 });
