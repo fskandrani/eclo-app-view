@@ -7,9 +7,3 @@ appmodule.controller('LoginCtrl', function($location, $scope, config) {
             + "&response_type=token&redirect_uri="
             + encodeURIComponent($location.absUrl().replace($location.url(), "/token"));
 });
-
-appmodule.controller('TokenCtrl', function($http, $location, $scope, $routeParams, $cookies) {
-    $scope.pageTitle = "token recovery";
-    $cookies.avop_access_token = $routeParams.access_token;
-    $location.path('/system');
-});

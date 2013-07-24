@@ -4,13 +4,13 @@ angular
         .module('ecloApp')
         .controller(
                 'ConfigurationCtrl',
-                function($scope, Airvantage, ApplicationService, config) {
+                function($scope, $cookies, Airvantage, ApplicationService, config) {
                     $scope.isHidden = true;
                     $scope.isDisabled = true;
-                    $scope.data = ApplicationService.getData(config.applicationUid);
+                    $scope.data = ApplicationService.getData($cookies.applicationUid);
                     ApplicationService
                             .getAllDataValues(
-                                    config.systemUid,
+                                    $cookies.systemUid,
                                     function(result) {
                                         // TODO (fsk) this is a static implementation make it generic, the problem here,
                                         // is that angularJs
@@ -39,10 +39,10 @@ angular
                     $scope.save = function() {
                         $scope.dataSettings = {
                             application : {
-                                uid : config.applicationUid
+                                uid : $cookies.applicationUid
                             },
                             systems : {
-                                uids : [ config.systemUid ]
+                                uids : [ $cookies.systemUid ]
                             },
                             settings : [
                                     {
