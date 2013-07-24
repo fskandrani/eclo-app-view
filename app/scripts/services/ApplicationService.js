@@ -21,7 +21,6 @@ appmodule.factory('ApplicationService', function ApplicationService($resource, $
     };
 
     services.getAllDataValues = function(applicationUid, successHandler, errorHandler) {
-        console.log("cookies : ", $cookies.avop_access_token);
         $http.get(
                 config.serverURL + '/api/v1/systems/' + applicationUid + '/data?all=true&company=' + config.companyUid
                         + '&' + 'access_token=' + $cookies.avop_access_token).success(function(data) {
