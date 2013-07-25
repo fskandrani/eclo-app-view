@@ -37,7 +37,7 @@ appmodule.factory('ApplicationService', function ApplicationService($resource, $
         });
     };
 
-    // This service is not used
+    // This service is not used anymore
     services.getApplicationDetails = function(applicationUid, successHandler, errorHandler) {
         $http.get(
                 config.serverURL + '/api/v1/applications?uid=' + applicationUid + '&access_token='
@@ -46,6 +46,7 @@ appmodule.factory('ApplicationService', function ApplicationService($resource, $
         }).error(errorHandler);
     };
 
+    // This service is not used anymore
     services.getSystems = function(successHandler, errorHandler) {
         $http.get(
                 config.serverURL + '/api/v1/systems/?fields=uid,name,applications&access_token='

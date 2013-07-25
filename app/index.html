@@ -22,32 +22,14 @@
     <![endif]-->
 
 
-	<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
-			<a class="brand" href="http://www.sierrawireless.com/" target="_blank"><img src="img/logo.png"></a>
-				<div class="row">
-					<div class="nav-collapse collapse">
-						<ul class="nav">
-							<li><a href="#/home">Home</a></li>
-							<li><a href="#/configuration">Configuration</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
 	<!--[if lt IE 9]>
       <script src="bower_components/es5-shim/es5-shim.js"></script>
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view="">
+    <div class="container" ng-view>
     </div>
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
@@ -90,6 +72,8 @@
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/controllers/configuration.js"></script>
         <script src="scripts/controllers/token.js"></script>
+        <script src="scripts/controllers/navigation.js"></script>
+        <script src="scripts/controllers/connection.js"></script>
         <!-- endbuild -->
 </body>
 </html>
