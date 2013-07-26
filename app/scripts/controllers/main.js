@@ -1,6 +1,6 @@
 'use strict';
 
-appmodule.controller('MainCtrl', function($scope, $routeParams, Airvantage, ApplicationService, config) {
+appmodule.controller('MainCtrl', function($scope, $routeParams, ApplicationService, config) {
     $scope.systems = ApplicationService.getSystem($routeParams.systemUid);
     $scope.data = ApplicationService.getData($routeParams.applicationUid);
     // Loop to refresh the data every 30 seconds

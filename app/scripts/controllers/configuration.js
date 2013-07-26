@@ -4,7 +4,7 @@ angular
         .module('ecloApp')
         .controller(
                 'ConfigurationCtrl',
-                function($scope, $routeParams, Airvantage, ApplicationService, config) {
+                function($scope, $routeParams, ApplicationService, config) {
                     $scope.isHidden = true;
                     $scope.isDisabled = true;
                     $scope.data = ApplicationService.getData($routeParams.applicationUid);
