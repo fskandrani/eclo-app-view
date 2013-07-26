@@ -5,22 +5,23 @@ basePath = '';
 
 // list of files / patterns to load in the browser
 files = [
-  JASMINE,
-  JASMINE_ADAPTER,
-  'app/bower_components/angular/angular.js',
-  'app/bower_components/angular-mocks/angular-mocks.js',
-  'app/scripts/*.js',
-  'app/scripts/**/*.js',
-  'test/mock/**/*.js',
-  'test/spec/**/*.js'
-];
+        JASMINE,
+        JASMINE_ADAPTER,
+        'app/bower_components/angular/angular.js',
+        'app/bower_components/angular-resource/angular-resource.js',
+        'app/bower_components/angular-cookies/angular-cookies.js',
+        'app/bower_components/angular-mocks/angular-mocks.js',
+        'app/scripts/*.js',
+        'app/scripts/**/*.js',
+        'test/mock/**/*.js',
+        'test/spec/**/*.js' ];
 
 // list of files to exclude
 exclude = [];
 
 // test results reporter to use
 // possible values: dots || progress || growl
-reporters = ['progress'];
+reporters = [ 'progress' ];
 
 // web server port
 port = 8080;
@@ -46,7 +47,7 @@ autoWatch = false;
 // - Safari (only Mac)
 // - PhantomJS
 // - IE (only Windows)
-browsers = ['Chrome'];
+browsers = [ 'Chrome' ];
 
 // If browser does not capture in given timeout [ms], kill it
 captureTimeout = 5000;

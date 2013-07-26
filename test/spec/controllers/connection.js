@@ -1,22 +1,21 @@
 'use strict';
 
-describe('Controller: ConnectionCtrl', function () {
+describe('Controller: ConnectionCtrl', function() {
 
-  // load the controller's module
-  beforeEach(module('ecloApp'));
+    // load the controller's module
+    beforeEach(module('ecloApp'));
 
-  var ConnectionCtrl,
-    scope;
+    var ConnectionCtrl, scope;
 
-  // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.$new();
-    ConnectionCtrl = $controller('ConnectionCtrl', {
-      $scope: scope
+    // Initialize the controller and a mock scope
+    beforeEach(inject(function($controller, $rootScope) {
+        scope = $rootScope.$new();
+        ConnectionCtrl = $controller('ConnectionCtrl', {
+            $scope : scope
+        });
+    }));
+
+    it('should attach a list of awesomeThings to the scope', function() {
+        expect(scope.awesomeThings.length).toBe(4);
     });
-  }));
-
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
-  });
 });

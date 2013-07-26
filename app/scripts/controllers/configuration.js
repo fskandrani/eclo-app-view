@@ -31,11 +31,6 @@ angular
                                         console.log(error);
                                     });
 
-                    // TODO (fsk) Optimization: Save only the modified fields
-                    $scope.changed = function(name) {
-
-                    };
-
                     $scope.save = function() {
                         $scope.dataSettings = {
                             application : {
