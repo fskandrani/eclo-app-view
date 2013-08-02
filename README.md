@@ -3,24 +3,24 @@
 Eclo App View is a web application, that allows the user to view and manage the settings and variable of an Eclo Application. 
 
 
-##Getting started:
+## Getting started:
 - Install node.js
-- Install: Yeoman, Bower and Grunt: **npm install -g yo grunt-cli bower**
-- Run the command: npm install (to install grunt and other stuff locally).
-- Download the dependencies using Bower: run the command: bower install (you can run bower list to see the missing dependencies).
+- Install: Yeoman, Bower and Grunt: `npm install -g yo grunt-cli bower`
+- Run the command: `npm install` (to install grunt and other stuff locally).
+- Download the dependencies using Bower: run the command: `bower install` (you can run bower list to see the missing dependencies).
 
 
-##Prerequisite:
+## Prerequisite:
 - An eclo application released.
 - An activated system using eclo.
 - A default client ID (it can be changed in **config.js** file).
-- By default the application use auto-branch server, you can change the server under **config.js** file.
+- By default the application use auto-branch server, you can change the server in **config.js** file.
 
 
 
-Running the application:
+## Running the application:
 
-- Run the command: grunt server (it will open a new window in your browser just ignore it or close it)
+- Run the command: `grunt server` (it will open a new window in your browser just ignore it or close it)
 - Connect to the Airvantage
 - Release and publish an Eclo application
 - Create a system that uses an Eclo application
@@ -33,13 +33,8 @@ Running the application:
 - Go to your system detail from Monitor, you'll see a new link to Eclo application View
 - Accept the connection authorization and enjoy :)
 
+## TODOs
 
-
-
-
-
-
----------------------------------------------------------------
-TODO: Run the unit tests.
-TODO: Fix aProvider bug in minified version.
-TODO: Improve Readme File.
+- TODO: Run the unit tests.
+- TODO: Fix aProvider bug in minified version.
+- TODO: Improve Readme File.
