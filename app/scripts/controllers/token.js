@@ -5,7 +5,7 @@ appmodule.controller('TokenCtrl', function($location, $scope, $routeParams, $coo
     $scope.pageTitle = "token recovery";
     $cookies.avop_access_token = $routeParams.access_token;
     $location.path('/home').search({
-        'systemUid' : $routeParams.systemUid,
-        'applicationUid' : $routeParams.applicationUid
+        'system' : $routeParams.system,
+        'application' : $routeParams.application
     });
 });

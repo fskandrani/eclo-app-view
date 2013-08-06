@@ -7,10 +7,10 @@ angular
                 function($scope, $routeParams, ApplicationService, config) {
                     $scope.isHidden = true;
                     $scope.isDisabled = true;
-                    $scope.data = ApplicationService.getData($routeParams.applicationUid);
+                    $scope.data = ApplicationService.getData($routeParams.application);
                     ApplicationService
                             .getAllDataValues(
-                                    $routeParams.systemUid,
+                                    $routeParams.system,
                                     function(result) {
                                         // TODO (fsk) this is a static implementation make it generic, the problem here,
                                         // is that angularJs
@@ -34,10 +34,10 @@ angular
                     $scope.save = function() {
                         $scope.dataSettings = {
                             application : {
-                                uid : $routeParams.applicationUid
+                                uid : $routeParams.application
                             },
                             systems : {
-                                uids : [ $routeParams.systemUid ]
+                                uids : [ $routeParams.system ]
                             },
                             settings : [
                                     {

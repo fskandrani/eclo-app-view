@@ -12,7 +12,7 @@ describe(
             // Initialize the controller and a mock scope
             beforeEach(inject(function($controller, $rootScope, $injector, $httpBackend) {
                 $httpBackend = $injector.get('$httpBackend');
-                $httpBackend.when('GET', '/configuration/:systemUid/application/:applicationUid').respond({
+                $httpBackend.when('GET', '/configuration/:system/application/:application').respond({
                     'greenhouse.data.openingThreshold' : [ {
                         value : '0'
                     } ],
