@@ -26,10 +26,10 @@ Eclo App View is a web application, that allows the user to view and manage the 
 - Create a system that uses an Eclo application
 - create a new Api Client:
 -- in Redirect Uri input: **{yourLocalServer}/#/token**
--- in View Uri input: **{yourLocalServer}/#/connect**
+-- in View Uri input: **{yourLocalServer}/#/login**
 - Create a new Application view from the detail of an Eclo application:
 -- Choose an Api Client
--- in View Uri input: **{yourLocalServer}/#/connect**
+-- in View Uri input: **{yourLocalServer}/#/login**
 - Go to your system detail from Monitor, you'll see a new link to Eclo application View
 - Accept the connection authorization and enjoy :)
 

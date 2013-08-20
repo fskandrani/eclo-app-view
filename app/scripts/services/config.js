@@ -2,8 +2,8 @@
 
 appmodule.factory('config', function() {
     var config = {
-        serverURL : "https://auto-trunk.airvantage.net",
-        client_id : "0471658b4be44945967eed239c2a4618"
+        serverURL : "http://auto-trunk.m2mop.net",
+        client_id : "085d82466f824079a829f301b8a1f492"
     };
     return config;
 });

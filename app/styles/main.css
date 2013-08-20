@@ -1,8 +1,7 @@
 body {
-    background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
-    padding-top: 40px;
+    background-color: transparent;
 }
 
 .hero-unit {
@@ -33,7 +32,6 @@ body {
 	font-size: 60px;
 	line-height: 1;
 	letter-spacing: -2px;
-	color: white;
 	padding-top: 30px;
 	padding-bottom: 60px;
 }
@@ -48,7 +46,6 @@ body {
 }
 
 .data-container {
-	background-color: white;
 	padding-bottom: 30px;
 	padding-top: 30px;
 }
