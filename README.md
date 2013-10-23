@@ -14,7 +14,7 @@ Eclo App View is a web application, that allows the user to view and manage the 
 - An eclo application released.
 - An activated system using eclo.
 - A default client ID (it can be changed in **config.js** file).
-- By default the application use auto-branch server, you can change the server in **config.js** file.
+- By default the application use NA server, you can change the server in **config.js** file.
 
 
 
@@ -37,4 +37,3 @@ Eclo App View is a web application, that allows the user to view and manage the 
 
 - TODO: Run the unit tests.
 - TODO: Fix aProvider bug in minified version.
-- TODO: Improve Readme File.
